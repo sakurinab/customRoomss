@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^0.11.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "canvas": "^2.9.0",
+    "discord-api-types": "^0.26.1",
+    "discord.js": "^13.6.0",
+    "mongoose": "^6.1.7",
+    "util": "^0.12.4"
+  },
+  "name": "malty_v1.0.0",
+  "version": "1.0.0",
+  "description": "malty first version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "snq",
+  "license": "ISC"
+}
