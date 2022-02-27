@@ -230,11 +230,11 @@ if(i.customId === 'unmute') {
 client.on('voiceStateUpdate', async (oldState, newState) => {
 	if(newState.member.user.bot) return
 
-	if(newState.channelId === '944010450268454973'){
+	if(newState.channelId === '947368067120398376'){
 		newState.guild.channels.create(`・` + oldState.member.user.username, {
 			type: 'GUILD_VOICE',
 			userLimit: 0,
-			parent: '942078581528477736',
+			parent: '947367997494935602',
 			permissionOverwrites: [{
 				id: newState.id,
 				allow: ['MANAGE_CHANNELS']
@@ -244,9 +244,9 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
 				newState.setChannel(c);
 			})
 	}
-	const category = await client.channels.cache.get("942078581528477736");
+	const category = await client.channels.cache.get("947367997494935602");
 	category.children.forEach(channel => {
-		if (channel.members.size <= 0 && channel.id != "944010450268454973") {
+		if (channel.members.size <= 0 && channel.id != "947368067120398376") {
 			channel.delete()
 		}
 	})
