@@ -230,11 +230,11 @@ if(i.customId === 'unmute') {
 client.on('voiceStateUpdate', async (oldState, newState) => {
 	if(newState.member.user.bot) return
 
-	if(newState.channelId === '947368067120398376'){
+	if(newState.channelId === '948580543568707594'){
 		newState.guild.channels.create(`・` + oldState.member.user.username, {
 			type: 'GUILD_VOICE',
 			userLimit: 0,
-			parent: '947367997494935602',
+			parent: '948580417534058536',
 			permissionOverwrites: [{
 				id: newState.id,
 				allow: ['MANAGE_CHANNELS']
@@ -244,7 +244,7 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
 				newState.setChannel(c);
 			})
 	}
-	const category = await client.channels.cache.get("947367997494935602");
+	const category = await client.channels.cache.get("948580417534058536");
 	category.children.forEach(channel => {
 		if (channel.members.size <= 0 && channel.id != "947368067120398376") {
 			channel.delete()
@@ -254,4 +254,4 @@ client.on('voiceStateUpdate', async (oldState, newState) => {
 
 process.on('unhandledRejection', (reason) => { console.log(reason) })
 
-client.login(token)
+client.login("OTQ4NjQ2ODYxNjI2MDQ4NTEz.Yh-2PA.2hblsfNVxle0q5jKR0oNiFbdQiY")
