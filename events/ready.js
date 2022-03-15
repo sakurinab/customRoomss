@@ -60,7 +60,7 @@ module.exports = {
             .setStyle('SECONDARY'),
         )
 
-        client.channels.cache.get("948580485502746674").send({ embeds: [pEmbed], components: [row, row2] })
+        client.channels.cache.get("953197406739111936").send({ embeds: [pEmbed], components: [row, row2] })
         
 
 	},
